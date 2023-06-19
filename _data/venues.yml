@@ -1,6 +1,29 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"AAMAS":
+  url: https://dl.acm.org/conference/aamas
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICML":
+  url: https://icml.cc/
+
+"IEEE ITS":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979
+
+"SIBGRAPI":
+  url: https://ieeexplore.ieee.org/xpl/conhome/9265968/proceeding
+
+"AI Communications":
+  url: https://content.iospress.com/articles/ai-communications/aic201580
+
+"NIME":
+  url: https://www.nime.org/
+
+"PeerJ CS":
+  url: https://peerj.com/computer-science/
+
+"IJCNN":
+  url: https://ieeexplore.ieee.org/xpl/conhome/9891857/proceeding
+
+"BNAIC":
+  url: https://dblp.org/db/conf/bnaic/index.html
+
+"ALA":
+  url: https://alaworkshop2023.github.io/

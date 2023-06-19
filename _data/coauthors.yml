@@ -1,34 +1,39 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Silva":
+  - firstname: ["Bruno C.", "Bruno"]
+    url: https://people.cs.umass.edu/~bsilva/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Bazzan":
+  - firstname: ["Ana", "Ana L. C."]
+    url: https://www.inf.ufrgs.br/~bazzan
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Roijers":
+  - firstname: ["Diederik", "Diederik M."]
+    url: https://roijers.info/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Nowé":
+  - firstname: ["Ann"]
+    url: https://scholar.google.com/citations?user=LH5QKbgAAAAJ&hl=en
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Felten":
+  - firstname: ["Florian"]
+    url: https://ffelten.github.io/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Ziemke":
+  - firstname: ["Theresa"]
+    url: https://www3.math.tu-berlin.de/coga/team/ziemke/
+  
+"Oliveira":
+  - firstname: ["Manuel", "Manuel M."]
+    url: https://www.inf.ufrgs.br/~oliveira/
+  
+"Ramos":
+  - firstname: ["Gabriel", "Gabriel O."]
+    url: https://gdoramos.net/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Torresen":
+  - firstname: ["Jim"]
+    url: https://jimtoer.no/
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Danoy":
+  - firstname: [Grégoire]
+    url: https://scholar.google.com/citations?user=XDRF0uwAAAAJ&hl=fr
