@@ -5,15 +5,23 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="">
+<meta name="msvalidate.01" content="">
+<!-- Avoid warning on Google Chrome
+        Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+        see https://stackoverflow.com/a/75119417
+    -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>repositories | Lucas N. Alegre</title>
+    <title>Repositories | Lucas N. Alegre</title>
     <meta name="author" content="Lucas N. Alegre">
-    <meta name="description" content="Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <meta name="description" content="Below, you can find a list of the open-source projects that I maintain.">
+    <meta name="keywords" content="reinforcement learning, transfer learning, multi-objective RL">
 
 
     <!-- Bootstrap & MDB -->
@@ -35,23 +43,18 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://lucasalegre.github.io/repositories/">
 
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
-    
 
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav sticky-bottom-footer">
 
     <!-- Header -->
     <header>
@@ -73,45 +76,19 @@
 
               <!-- About -->
               <li class="nav-item ">
-                <a class="nav-link" href="/">about</a>
+                <a class="nav-link" href="/">About</a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/blog/">blog</a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="/repositories/">repositories<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/repositories/">Repositories<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/teaching/">teaching</a>
-              </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/publications/">publications</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/projects/">projects</a>
-                </div>
-              </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
+                <a class="nav-link" href="/assets/pdf/CV.pdf">CV</a>
               </li>
             </ul>
           </div>
@@ -134,8 +111,8 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">repositories</h1>
-            <p class="post-description">Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.</p>
+            <h1 class="post-title">Repositories</h1>
+            <p class="post-description">Below, you can find a list of the open-source projects that I maintain.</p>
           </header>
 
           <article>
@@ -144,17 +121,9 @@
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   
     <div class="repo p-2 text-center">
-  <a href="https://github.com/torvalds" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="torvalds" src="https://github-readme-stats.vercel.app/api/?username=torvalds&amp;theme=default&amp;show_icons=true">
-    <img class="repo-img-dark w-100" alt="torvalds" src="https://github-readme-stats.vercel.app/api/?username=torvalds&amp;theme=dark&amp;show_icons=true">
-  </a>
-</div>
-
-  
-    <div class="repo p-2 text-center">
-  <a href="https://github.com/alshedivat" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="alshedivat" src="https://github-readme-stats.vercel.app/api/?username=alshedivat&amp;theme=default&amp;show_icons=true">
-    <img class="repo-img-dark w-100" alt="alshedivat" src="https://github-readme-stats.vercel.app/api/?username=alshedivat&amp;theme=dark&amp;show_icons=true">
+  <a href="https://github.com/LucasAlegre" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="LucasAlegre" src="https://github-readme-stats.vercel.app/api/?username=LucasAlegre&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="LucasAlegre" src="https://github-readme-stats.vercel.app/api/?username=LucasAlegre&amp;theme=dark&amp;show_icons=true">
   </a>
 </div>
 
@@ -163,27 +132,11 @@
 
 <hr>
 
-<h4>torvalds</h4>
-
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   <div class="repo p-2 text-center">
   <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-200" alt="torvalds" src="https://github-profile-trophy.vercel.app/?username=torvalds&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
-    <img class="repo-img-dark w-200" alt="torvalds" src="https://github-profile-trophy.vercel.app/?username=torvalds&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
-  </a>
-</div>
-
-  </div>
-
-<hr>
-
-<h4>alshedivat</h4>
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  <div class="repo p-2 text-center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-200" alt="alshedivat" src="https://github-profile-trophy.vercel.app/?username=alshedivat&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
-    <img class="repo-img-dark w-200" alt="alshedivat" src="https://github-profile-trophy.vercel.app/?username=alshedivat&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-light w-200" alt="LucasAlegre" src="https://github-profile-trophy.vercel.app/?username=LucasAlegre&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="LucasAlegre" src="https://github-profile-trophy.vercel.app/?username=LucasAlegre&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
   </a>
 </div>
 
@@ -200,9 +153,9 @@
 
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="alshedivat/al-folio" src="https://github-readme-stats.vercel.app/api/pin/?username=alshedivat&amp;repo=al-folio&amp;theme=default&amp;show_owner=false">
-    <img class="repo-img-dark w-100" alt="alshedivat/al-folio" src="https://github-readme-stats.vercel.app/api/pin/?username=alshedivat&amp;repo=al-folio&amp;theme=dark&amp;show_owner=false">
+  <a href="https://github.com/LucasAlegre/morl-baselines" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="LucasAlegre/morl-baselines" src="https://github-readme-stats.vercel.app/api/pin/?username=LucasAlegre&amp;repo=morl-baselines&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="LucasAlegre/morl-baselines" src="https://github-readme-stats.vercel.app/api/pin/?username=LucasAlegre&amp;repo=morl-baselines&amp;theme=dark&amp;show_owner=false">
   </a>
 </div>
 
@@ -212,9 +165,9 @@
 
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/twbs/bootstrap" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="twbs/bootstrap" src="https://github-readme-stats.vercel.app/api/pin/?username=twbs&amp;repo=bootstrap&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="twbs/bootstrap" src="https://github-readme-stats.vercel.app/api/pin/?username=twbs&amp;repo=bootstrap&amp;theme=dark&amp;show_owner=true">
+  <a href="https://github.com/Farama-Foundation/MO-Gymnasium" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="Farama-Foundation/MO-Gymnasium" src="https://github-readme-stats.vercel.app/api/pin/?username=Farama-Foundation&amp;repo=MO-Gymnasium&amp;theme=default&amp;show_owner=true">
+    <img class="repo-img-dark w-100" alt="Farama-Foundation/MO-Gymnasium" src="https://github-readme-stats.vercel.app/api/pin/?username=Farama-Foundation&amp;repo=MO-Gymnasium&amp;theme=dark&amp;show_owner=true">
   </a>
 </div>
 
@@ -224,57 +177,9 @@
 
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/jekyll/jekyll" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="jekyll/jekyll" src="https://github-readme-stats.vercel.app/api/pin/?username=jekyll&amp;repo=jekyll&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="jekyll/jekyll" src="https://github-readme-stats.vercel.app/api/pin/?username=jekyll&amp;repo=jekyll&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
-
-  
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/jquery/jquery" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="jquery/jquery" src="https://github-readme-stats.vercel.app/api/pin/?username=jquery&amp;repo=jquery&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="jquery/jquery" src="https://github-readme-stats.vercel.app/api/pin/?username=jquery&amp;repo=jquery&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
-
-  
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/FortAwesome/Font-Awesome" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="FortAwesome/Font-Awesome" src="https://github-readme-stats.vercel.app/api/pin/?username=FortAwesome&amp;repo=Font-Awesome&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="FortAwesome/Font-Awesome" src="https://github-readme-stats.vercel.app/api/pin/?username=FortAwesome&amp;repo=Font-Awesome&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
-
-  
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/jpswalsh/academicons" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="jpswalsh/academicons" src="https://github-readme-stats.vercel.app/api/pin/?username=jpswalsh&amp;repo=academicons&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="jpswalsh/academicons" src="https://github-readme-stats.vercel.app/api/pin/?username=jpswalsh&amp;repo=academicons&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
-
-  
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/mathjax/MathJax" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="mathjax/MathJax" src="https://github-readme-stats.vercel.app/api/pin/?username=mathjax&amp;repo=MathJax&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="mathjax/MathJax" src="https://github-readme-stats.vercel.app/api/pin/?username=mathjax&amp;repo=MathJax&amp;theme=dark&amp;show_owner=true">
+  <a href="https://github.com/LucasAlegre/sumo-rl" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="LucasAlegre/sumo-rl" src="https://github-readme-stats.vercel.app/api/pin/?username=LucasAlegre&amp;repo=sumo-rl&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="LucasAlegre/sumo-rl" src="https://github-readme-stats.vercel.app/api/pin/?username=LucasAlegre&amp;repo=sumo-rl&amp;theme=dark&amp;show_owner=false">
   </a>
 </div>
 
@@ -289,10 +194,9 @@
       
     </div>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2023 Lucas N. Alegre. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2023 Lucas N. Alegre. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -337,7 +241,19 @@
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script><!-- Panelbear Analytics - We respect your privacy -->
+  <script async src="https://cdn.panelbear.com/analytics.js?site="></script>
+  <script>
+    window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+    panelbear('config', { site: '' });
+  </script>
     
 
 <!-- Scrolling Progress Bar -->

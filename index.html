@@ -5,6 +5,14 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="">
+<meta name="msvalidate.01" content="">
+<!-- Avoid warning on Google Chrome
+        Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+        see https://stackoverflow.com/a/75119417
+    -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
@@ -12,9 +20,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lucas N. Alegre</title>
     <meta name="author" content="Lucas N. Alegre">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+    <meta name="description" content="Lucas N. Alegre's web page.
 ">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <meta name="keywords" content="reinforcement learning, transfer learning, multi-objective RL">
 
 
     <!-- Bootstrap & MDB -->
@@ -36,23 +44,18 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://lucasalegre.github.io/">
 
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
-    
 
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav sticky-bottom-footer">
 
     <!-- Header -->
     <header>
@@ -60,6 +63,16 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
+          <!-- Social Icons -->
+          <div class="navbar-brand social">
+            <a href="mailto:%6C%6E%61%6C%65%67%72%65@%69%6E%66.%75%66%72%67%73.%62%72" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=YZnEeJUAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="http://lattes.cnpq.br/8350276337206370" target="_blank" title="Lattes" rel="external nofollow noopener"><i class="ai ai-lattes"></i></a>
+            <a href="https://github.com/LucasAlegre" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/lnalegre" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+
+          </div>
           
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,45 +87,19 @@
 
               <!-- About -->
               <li class="nav-item active">
-                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">About<span class="sr-only">(current)</span></a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/blog/">blog</a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+                <a class="nav-link" href="/repositories/">Repositories</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/repositories/">repositories</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/teaching/">teaching</a>
-              </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/publications/">publications</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/projects/">projects</a>
-                </div>
-              </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
+                <a class="nav-link" href="/assets/pdf/CV.pdf">CV</a>
               </li>
             </ul>
           </div>
@@ -137,7 +124,7 @@
           <h1 class="post-title">
            <span class="font-weight-bold">Lucas</span> N. Alegre
           </h1>
-          <p class="desc"><a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.</p>
+          <p class="desc"><a href="https://www.inf.ufrgs.br/site/en/" rel="external nofollow noopener" target="_blank">Institute of Informatics</a> at <a href="http://www.ufrgs.br/english/home" rel="external nofollow noopener" target="_blank">Federal University of Rio Grande do Sul (UFRGS)</a> and <a href="https://farama.org/team" rel="external nofollow noopener" target="_blank">Farama Foundation</a> <br>lnalegre@inf.ufrgs.br</p>
         </header>
 
         <article>
@@ -156,132 +143,681 @@
 </figure>
 
             <div class="address">
-              <p>555 your office number</p> <p>123 your address street</p> <p>Your City, State 12345</p>
+              <p>INF - UFRGS</p> <p>Porto Alegre - RS, Brasil</p>
 
             </div>
           </div>
 
           <div class="clearfix">
-            <p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p>
+            <p>I am a Ph.D. student in the <a href="https://www.inf.ufrgs.br/site/en/" rel="external nofollow noopener" target="_blank">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home" rel="external nofollow noopener" target="_blank">Federal University of Rio Grande do Sul (UFRGS)</a> under the supervision of Prof. <a href="https://www.inf.ufrgs.br/~bazzan/" rel="external nofollow noopener" target="_blank">Ana Bazzan</a>.
+Currently, I am doing a doctoral stay in the <a href="https://ai.vub.ac.be/" rel="external nofollow noopener" target="_blank">AI Lab</a> at the <a href="https://www.vub.be/" rel="external nofollow noopener" target="_blank">Vrije Universiteit Brussel (VUB)</a> under the supervision of Prof. <a href="https://ai.vub.ac.be/team/ann-nowe/" rel="external nofollow noopener" target="_blank">Ann Nowé</a>.</p>
 
-<p>Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing <code class="language-plaintext highlighter-rouge">profile</code> property of the YAML header of your <code class="language-plaintext highlighter-rouge">_pages/about.md</code>. Edit <code class="language-plaintext highlighter-rouge">_bibliography/papers.bib</code> and Jekyll will render your <a href="/al-folio/publications/">publications page</a> automatically.</p>
+<p>I am also part of the <a href="https://farama.org/team" rel="external nofollow noopener" target="_blank">Farama Foundation</a>, a nonprofit organization that maintains the largest open-source RL libraries in the world.</p>
+<hr>
 
-<p>Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" rel="external nofollow noopener" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
+<p><i>My research interests include reinforcement learning (RL), machine learning, artificial intelligence, and their applications to real-world problems. 
+Currently, I am doing research on the intersection of multi-objective RL, transfer learning, and model-based RL methods.
+</i></p>
+<hr>
+
+<p>I completed my B.Sc. in Computer Science <i>cum laude</i> at the <a href="http://www.ufrgs.br/english/home" rel="external nofollow noopener" target="_blank">Federal University of Rio Grande do Sul</a> in 2020.
+My undergraduate thesis, advised by Prof. <a href="https://people.cs.umass.edu/~bsilva" rel="external nofollow noopener" target="_blank">Bruno C. da Silva</a>, tackled the problem of reinforcement learning in continuous non-stationary environments.</p>
+
+<!-- In Winter of 2020, I worked as an intern researcher at the <a href="https://www.tu.berlin/en/">Technische Universität Berlin</a>, under supervision of Prof. <a href="https://www.tu-berlin.de/?id=12926">Kai Nagel</a>. -->
+
+<!-- Write your biography here. Tell the world about yourself. 
+Link to your favorite [subreddit](http://reddit.com). 
+You can put a picture in, too. 
+The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+ -->
+<!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
           </div>
 
           <!-- News -->
-          <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">Jan 15, 2016</th>
-                  <td>
-                    A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
-
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Nov 7, 2015</th>
-                  <td>
-                    <a class="news-title" href="/news/announcement_2/">A long announcement with details</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Oct 22, 2015</th>
-                  <td>
-                    A simple inline announcement.
-
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
+          
 
           <!-- Latest posts -->
-          <h2><a href="/blog/" style="color: inherit;">latest posts</a></h2>
-          <div class="news">
-            <div class="table-responsive" style="max-height: 60vw">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">May 12, 2023</th>
-                  <td>
-                    
-                      <a class="news-title" href="/blog/2023/custom-blockquotes/">a post with custom blockquotes</a>
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 25, 2023</th>
-                  <td>
-                    
-                      <a class="news-title" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 25, 2023</th>
-                  <td>
-                    
-                      <a class="news-title" href="/blog/2023/audios/">a post with audios</a>
-                    
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-
+          
 
           <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
+          <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
           <div class="publications">
-            <ol class="bibliography"><li>
+            <ol class="bibliography">
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://journals.aps.org/" rel="external nofollow noopener" target="_blank">PhysRev</a></abbr></div>
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/gpi-ls.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="gpi-ls.png" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://dl.acm.org/conference/aamas" rel="external nofollow noopener" target="_blank">AAMAS</a></abbr>
+</div>
 
         <!-- Entry bib key -->
-        <div id="PhysRev.47.777" class="col-sm-8">
+        <div id="Alegre+2023" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?</div>
+        <div class="title">Sample-Efficient Multi-Objective Learning via Generalized Policy Improvement Prioritization</div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>A. Einstein</em>, <a href="https://en.wikipedia.org/wiki/Boris_Podolsky" rel="external nofollow noopener" target="_blank">B. Podolsky</a>, and <a href="https://en.wikipedia.org/wiki/Nathan_Rosen" rel="external nofollow noopener" target="_blank">N. Rosen</a>
+        <em>Lucas N. Alegre</em>, <a href="https://roijers.info/" rel="external nofollow noopener" target="_blank">Diederik M. Roijers</a>, <a href="https://scholar.google.com/citations?user=LH5QKbgAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Ann Nowé</a>, <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>, and <a href="https://people.cs.umass.edu/~bsilva/" rel="external nofollow noopener" target="_blank">Bruno C. Silva</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Phys. Rev.</em>, May 1935
+          <em>In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2023
         </div>
         <div class="periodical">
-          
+          <b style="color:rgb(179, 128, 34);">  </b>
         </div>
 
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-            <a href="/assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://arxiv.org/abs/2301.07784" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/LucasAlegre/morl-baselines" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/pdf/gpi-ls.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1103/PhysRev.47.777"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p>
+            <p>Multi-objective reinforcement learning (MORL) algorithms tackle sequential decision problems where agents may have different preferences over (possibly conflicting) reward functions. Such algorithms often learn a set of policies (each optimized for a particular agent preference) that can later be used to solve problems with novel preferences. We introduce a novel algorithm that uses Generalized Policy Improvement (GPI) to define principled, formally-derived prioritization schemes that improve sample-efficient learning. They implement active-learning strategies by which the agent can (i) identify the most promising preferences/objectives to train on at each moment, to more rapidly solve a given MORL problem; and (ii) identify which previous experiences are most relevant when learning a policy for a particular agent preference, via a novel Dyna-style MORL method. We prove our algorithm is guaranteed to always converge to an optimal solution in a finite number of steps, or an ϵ-optimal solution (for a bounded ϵ) if the agent is limited and can only identify possibly sub-optimal policies. We also prove that our method monotonically improves the quality of its partial solutions while learning. Finally, we introduce a bound that characterizes the maximum utility loss (with respect to the optimal solution) incurred by the partial solutions computed by our method throughout learning. We empirically show that our method outperforms state-of-the-art MORL algorithms in challenging multi-objective tasks, both with discrete and continuous state spaces.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Alegre+2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Sample-Efficient Multi-Objective Learning via Generalized Policy Improvement Prioritization}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Roijers, Diederik M. and Now{\'e}, Ann and Bazzan, Ana L. C. and \relax{da} Silva, Bruno C.}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
           </div>
         </div>
       </div>
-</li></ol>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/sfols.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="sfols.png" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Alegre+2022" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Optimistic Linear Support and Successor Features as a Basis for Optimal Policy Transfer</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Lucas N. Alegre</em>, <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>, and <a href="https://people.cs.umass.edu/~bsilva/" rel="external nofollow noopener" target="_blank">Bruno C. Silva</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 39th International Conference on Machine Learning</em>, 2022
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://proceedings.mlr.press/v162/alegre22a.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/LucasAlegre/sfols" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/pdf/sfols.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In many real-world applications, reinforcement learning (RL) agents might have to solve multiple tasks, each one typically modeled via a reward function. If reward functions are expressed linearly, and the agent has previously learned a set of policies for different tasks, successor features (SFs) can be exploited to combine such policies and identify reasonable solutions for new problems. However, the identified solutions are not guaranteed to be optimal. We introduce a novel algorithm that addresses this limitation. It allows RL agents to combine existing policies and directly identify optimal policies for arbitrary new problems, without requiring any further interactions with the environment. We first show (under mild assumptions) that the transfer learning problem tackled by SFs is equivalent to the problem of learning to optimize multiple objectives in RL. We then introduce an SF-based extension of the Optimistic Linear Support algorithm to learn a set of policies whose SFs form a convex coverage set. We prove that policies in this set can be combined via generalized policy improvement to construct optimal behaviors for any new linearly-expressible tasks, without requiring any additional training samples. We empirically show that our method outperforms state-of-the-art competing algorithms both in discrete and continuous domains under value function approximation.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Alegre+2022</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Optimistic Linear Support and Successor Features as a Basis for Optimal Policy Transfer}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Bazzan, Ana L. C. and da Silva, Bruno C.}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 39th International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{394--413}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">editor</span> <span class="p">=</span> <span class="s">{Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{162}</span><span class="p">,</span>
+  <span class="na">series</span> <span class="p">=</span> <span class="s">{Proceedings of Machine Learning Research}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/mo-gym-logo.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="mo-gym-logo.png" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://dblp.org/db/conf/bnaic/index.html" rel="external nofollow noopener" target="_blank">BNAIC</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Alegre+2022bnaic" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">MO-Gym: A Library of Multi-Objective Reinforcement Learning Environments</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Lucas N. Alegre</em>, <a href="https://ffelten.github.io/" rel="external nofollow noopener" target="_blank">Florian Felten</a>, El-Ghazali Talbi, <a href="https://scholar.google.com/citations?user=XDRF0uwAAAAJ&amp;hl=fr" rel="external nofollow noopener" target="_blank">Grégoire Danoy</a>, <a href="https://scholar.google.com/citations?user=LH5QKbgAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Ann Nowé</a>, <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>, and <a href="https://people.cs.umass.edu/~bsilva/" rel="external nofollow noopener" target="_blank">Bruno C. Silva</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 34th Benelux Conference on Artificial Intelligence BNAIC/Benelearn 2022</em>, 2022
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://people.cs.umass.edu/%C2%A0bsilva/papers/MO-Gym_BNAIC_2022.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/Farama-Foundation/MO-Gymnasium" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We introduce MO-Gym, an extensible library containing a diverse set of multi-objective reinforcement learning environments. It introduces a standardized API that facilitates conducting experiments and performance analyses of algorithms designed to interact with multiobjective Markov decision processes. Importantly, it extends the widelyused OpenAI Gym API, allowing the reuse of algorithms and features that are well-established in the reinforcement learning community. MOGym is available at: https://github.com/LucasAlegre/mo-gym.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Alegre+2022bnaic</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Felten, Florian and Talbi, El-Ghazali and Danoy, Gr{\'e}goire and Now{\'e}, Ann and Bazzan, Ana L. C. and da Silva, Bruno C.}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{MO-Gym}: A Library of Multi-Objective Reinforcement Learning Environments}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 34th Benelux Conference on Artificial Intelligence BNAIC/Benelearn 2022}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/mbcd.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="mbcd.gif" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://dl.acm.org/conference/aamas" rel="external nofollow noopener" target="_blank">AAMAS</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Alegre+2021aamas" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Minimum-Delay Adaptation in Non-Stationary Reinforcement Learning via Online High-Confidence Change-Point Detection</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Lucas N. Alegre</em>, <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>, and <a href="https://people.cs.umass.edu/~bsilva/" rel="external nofollow noopener" target="_blank">Bruno C. Silva</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 20th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2021
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);"> Best Paper Award at LXAI Workshop @ ICML 2021 </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="http://www.ifaamas.org/Proceedings/aamas2021/pdfs/p97.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/LucasAlegre/sfols" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-isbn="9781450383073"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Non-stationary environments are challenging for reinforcement learning algorithms. If the state transition and/or reward functions change based on latent factors, the agent is effectively tasked with optimizing a behavior that maximizes performance over a possibly infinite random sequence of Markov Decision Processes (MDPs), each of which drawn from some unknown distribution. We call each such MDP a context. Most related works make strong assumptions such as knowledge about the distribution over contexts, the existence of pre-training phases, or a priori knowledge about the number, sequence, or boundaries between contexts. We introduce an algorithm that efficiently learns policies in non-stationary environments. It analyzes a possibly infinite stream of data and computes, in real-time, high-confidence change-point detection statistics that reflect whether novel, specialized policies need to be created and deployed to tackle novel contexts, or whether previously-optimized ones might be reused. We show that (i) this algorithm minimizes the delay until unforeseen changes to a context are detected, thereby allowing for rapid responses; and (ii) it bounds the rate of false alarm, which is important in order to minimize regret. Our method constructs a mixture model composed of a (possibly infinite) ensemble of probabilistic dynamics predictors that model the different modes of the distribution over underlying latent MDPs. We evaluate our algorithm on high-dimensional continuous reinforcement learning problems and show that it outperforms state-of-the-art (model-free and model-based) RL algorithms, as well as state-of-the-art meta-learning methods specially designed to deal with non-stationarity.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Alegre+2021aamas</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Minimum-Delay Adaptation in Non-Stationary Reinforcement Learning via Online High-Confidence Change-Point Detection}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Bazzan, Ana L. C. and da Silva, Bruno C.}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 20th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)}</span><span class="p">,</span>
+  <span class="na">location</span> <span class="p">=</span> <span class="s">{Virtual Event, United Kingdom}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{97--105}</span><span class="p">,</span>
+  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{9781450383073}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{International Foundation for Autonomous Agents and Multiagent Systems}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Richland, SC}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Best Paper Award at LXAI Workshop @ ICML 2021}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/its.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="its.png" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" rel="external nofollow noopener" target="_blank">IEEE ITS</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Alegre+2021its" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Using Reinforcement Learning to Control Traffic Signals in a Real-World Scenario: an Approach Based on Linear Function Approximation</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Lucas N. Alegre</em>, <a href="https://www3.math.tu-berlin.de/coga/team/ziemke/" rel="external nofollow noopener" target="_blank">Theresa Ziemke</a>, and <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2021
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://ieeexplore.ieee.org/document/9468362" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TITS.2021.3091014"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/TITS.2021.3091014" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Reinforcement learning is an efficient, widely used machine learning technique that performs well in problems with a reasonable number of states and actions. This is rarely the case regarding control-related problems, as for instance controlling traffic signals, where the state space can be very large. One way to deal with the curse of dimensionality is to use generalization techniques such as function approximation. In this paper, a linear function approximation is used by traffic signal agents in a network of signalized intersections. Specifically, a true online SARSA (λ) algorithm with Fourier basis functions (TOS(λ)-FB) is employed. This method has the advantage of having convergence guarantees and error bounds, a drawback of non-linear function approximation. In order to evaluate TOS(λ)-FB, we perform experiments in variations of an isolated intersection scenario and a scenario of the city of Cottbus, Germany, with 22 signalized intersections, implemented in MATSim. We compare our results not only to fixed-time controllers, but also to a state-of-the-art rule-based adaptive method, showing that TOS(λ)-FB shows a performance that is highly superior to the fixed-time, while also being at least as efficient as the rule-based approach. For more than half of the intersections, our approach leads to less congestion and delay, without the need for the knowledge that underlies the rule-based approach.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Alegre+2021its</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Ziemke, Theresa and Bazzan, Ana L. C.}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Using Reinforcement Learning to Control Traffic Signals in a Real-World Scenario: an Approach Based on Linear Function Approximation}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Intelligent Transportation Systems}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/TITS.2021.3091014}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/aicom.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="aicom.png" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://content.iospress.com/articles/ai-communications/aic201580" rel="external nofollow noopener" target="_blank">AI Communications</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Ziemke+2021" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Reinforcement Learning vs. Rule-Based Adaptive Traffic Signal Control: A Fourier Basis Linear Function Approximation for Traffic Signal Control</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://www3.math.tu-berlin.de/coga/team/ziemke/" rel="external nofollow noopener" target="_blank">Theresa Ziemke</a>, <em>Lucas N. Alegre</em>, and <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>AI Communications</em>, 2021
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://content.iospress.com/articles/ai-communications/aic201580" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3233/AIC-201580"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.3233/AIC-201580" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Reinforcement learning is an efficient, widely used machine learning technique that performs well when the state and action spaces have a reasonable size. This is rarely the case regarding control-related problems, as for instance controlling traffic signals. Here, the state space can be very large. In order to deal with the curse of dimensionality, a rough discretization of such space can be employed. However, this is effective just up to a certain point. A way to mitigate this is to use techniques that generalize the state space such as function approximation. In this paper, a linear function approximation is used. Specifically, SARSA(λ) with Fourier basis features is implemented to control traffic signals in the agent-based transport simulation MATSim. The results are compared not only to trivial controllers such as fixed-time, but also to state-of-the-art rule-based adaptive methods. It is concluded that SARSA(λ) with Fourier basis features is able to outperform such methods, especially in scenarios with varying traffic demands or unexpected events.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Ziemke+2021</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ziemke, Theresa and Alegre, Lucas N. and Bazzan, Ana L. C.}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Reinforcement Learning vs. Rule-Based Adaptive Traffic Signal Control: A Fourier Basis Linear Function Approximation for Traffic Signal Control}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{AI Communications}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{89--103}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3233/AIC-201580}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/peerj.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="peerj.jpg" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://peerj.com/computer-science/" rel="external nofollow noopener" target="_blank">PeerJ CS</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Alegre+2021peerj" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Quantifying the Impact of Non-Stationarity in Reinforcement Learning-Based Traffic Signal Control</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Lucas N. Alegre</em>, <a href="https://www.inf.ufrgs.br/~bazzan" rel="external nofollow noopener" target="_blank">Ana L. C. Bazzan</a>, and <a href="https://people.cs.umass.edu/~bsilva/" rel="external nofollow noopener" target="_blank">Bruno C. Silva</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>PeerJ Computer Science</em>, 2021
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://peerj.com/articles/cs-575/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.7717/peerj-cs.575"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.7717/peerj-cs.575" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In reinforcement learning (RL), dealing with non-stationarity is a challenging issue. However, some domains such as traffic optimization are inherently non-stationary. Causes for and effects of this are manifold. In particular, when dealing with traffic signal controls, addressing non-stationarity is key since traffic conditions change over time and as a function of traffic control decisions taken in other parts of a network. In this paper we analyze the effects that different sources of non-stationarity have in a network of traffic signals, in which each signal is modeled as a learning agent. More precisely, we study both the effects of changing the context in which an agent learns (e.g., a change in flow rates experienced by it), as well as the effects of reducing agent observability of the true environment state. Partial observability may cause distinct states (in which distinct actions are optimal) to be seen as the same by the traffic signal agents. This, in turn, may lead to sub-optimal performance. We show that the lack of suitable sensors to provide a representative observation of the real state seems to affect the performance more drastically than the changes to the underlying traffic patterns.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Alegre+2021peerj</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Quantifying the Impact of Non-Stationarity in Reinforcement Learning-Based Traffic Signal Control}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Bazzan, Ana L. C. and da Silva, Bruno C.}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{7}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{2376-5992}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{http://dx.doi.org/10.7717/peerj-cs.575}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.7717/peerj-cs.575}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{PeerJ Computer Science}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{PeerJ}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{e575}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/selfieart.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="selfieart.gif" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://ieeexplore.ieee.org/xpl/conhome/9265968/proceeding" rel="external nofollow noopener" target="_blank">SIBGRAPI</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="AlegreOliveira2020" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">SelfieArt: Interactive Multi-Style Transfer for Selfies and Videos with Soft Transitions</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Lucas N. Alegre</em>, and <a href="https://www.inf.ufrgs.br/~oliveira/" rel="external nofollow noopener" target="_blank">Manuel M. Oliveira</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 2020 33rd SIBGRAPI Conference on Graphics, Patterns and Images</em>, 2020
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://ieeexplore.ieee.org/document/9266016" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/SIBGRAPI51738.2020.00011"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/SIBGRAPI51738.2020.00011" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We introduce SelfieArt, an interactive technique for performing multi-style transfer for portraits and videos. Our method provides a simple and intuitive way of producing exquisite artistic results that combine multiple styles in a harmonious fashion. It uses face parsing and a multi-style transfer model to apply different styles to the various semantic segments. This is achieved using parameterized soft masks, allowing users to adjust the smoothness of the transitions between stylized regions in real-time. We demonstrate the effectiveness of our solution on a large set of images and videos. Given its flexibility, speed, and quality of results, our solution can be a valuable tool for creative exploration, allowing anyone to transform photographs and drawings in world-class artistic results.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">AlegreOliveira2020</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Oliveira, Manuel M.}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{SelfieArt: Interactive Multi-Style Transfer for Selfies and Videos with Soft Transitions}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 2020 33rd SIBGRAPI Conference on Graphics, Patterns and Images}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{17--22}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/SIBGRAPI51738.2020.00011}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/nime.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="nime.png" data-zoomable onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+<abbr class="badge"><a href="https://www.nime.org/" rel="external nofollow noopener" target="_blank">NIME</a></abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="weber+2019" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Parameterized Melody Generation with Autoencoders and Temporally-Consistent Noise</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Aline Weber, <em>Lucas N. Alegre</em>, <a href="https://jimtoer.no/" rel="external nofollow noopener" target="_blank">Jim Torresen</a>, and <a href="https://people.cs.umass.edu/~bsilva/" rel="external nofollow noopener" target="_blank">Bruno C. Silva</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the International Conference on New Interfaces for Musical Expression</em>, 2019
+        </div>
+        <div class="periodical">
+          <b style="color:rgb(179, 128, 34);">  </b>
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://www.nime.org/proceedings/2019/nime2019_paper035.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We introduce a machine learning technique to autonomously generate novel melodies that are variations of an arbitrary base melody. These are produced by a neural network that ensures that (with high probability) the melodic and rhythmic structure of the new melody is consistent with a given set of sample songs. We train a Variational Autoencoder network to identify a low-dimensional set of variables that allows for the compression and representation of sample songs. By perturbing these variables with Perlin Noise—a temporally-consistent parameterized noise function—it is possible to generate smoothly-changing novel melodies. We show that (1) by regulating the amount of noise, one can specify how much of the base song will be preserved; and (2) there is a direct correlation between the noise signal and the differences between the statistical properties of novel melodies and the original one. Users can interpret the controllable noise as a type of "creativity knob": the higher it is, the more leeway the network has to generate significantly different melodies. We present a physical prototype that allows musicians to use a keyboard to provide base melodies and to adjust the network’s "creativity knobs" to regulate in real-time the process that proposes new melody ideas.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">weber+2019</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Weber, Aline and Alegre, Lucas N. and Torresen, Jim and da Silva, Bruno C.}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the International Conference on New Interfaces for Musical Expression}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2019}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
           </div>
 
 
@@ -289,14 +825,16 @@
             <div class="social">
               <div class="contact-icons">
                 <a href="mailto:%6C%6E%61%6C%65%67%72%65@%69%6E%66.%75%66%72%67%73.%62%72" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
+            <a href="https://scholar.google.com/citations?user=YZnEeJUAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="http://lattes.cnpq.br/8350276337206370" target="_blank" title="Lattes" rel="external nofollow noopener"><i class="ai ai-lattes"></i></a>
+            <a href="https://github.com/LucasAlegre" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/lnalegre" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
             
 
               </div>
 
               <div class="contact-note">
-                You can even add a little note about which of these is the best way to reach you.
-
+                
               </div>
 
             </div>
@@ -307,10 +845,9 @@
       
     </div>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2023 Lucas N. Alegre. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2023 Lucas N. Alegre. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -355,7 +892,19 @@
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script><!-- Panelbear Analytics - We respect your privacy -->
+  <script async src="https://cdn.panelbear.com/analytics.js?site="></script>
+  <script>
+    window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+    panelbear('config', { site: '' });
+  </script>
     
 
 <!-- Scrolling Progress Bar -->
