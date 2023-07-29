@@ -19,12 +19,12 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a Ph.D. student in the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a> under the supervision of Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a>.
-Currently, I am doing a doctoral stay in the <a href="https://ai.vub.ac.be/">AI Lab</a> at the <a href="https://www.vub.be/">Vrije Universiteit Brussel (VUB)</a> under the supervision of Prof. <a href="https://ai.vub.ac.be/team/ann-nowe/">Ann Nowé</a>.
+Part of my Ph.D. was done in the <a href="https://ai.vub.ac.be/">AI Lab</a> at the <a href="https://www.vub.be/">Vrije Universiteit Brussel (VUB)</a> under the supervision of Prof. <a href="https://ai.vub.ac.be/team/ann-nowe/">Ann Nowé</a>.
 
 I am also part of the <a href="https://farama.org/team">Farama Foundation</a>, a nonprofit organization that maintains the largest open-source RL libraries in the world.
 <hr>
 <i>My research interests include reinforcement learning (RL), machine learning, artificial intelligence, and their applications to real-world problems. 
-Currently, I am doing research on the intersection of multi-objective RL, transfer learning, and model-based RL methods.
+In my Ph.D., I am tackling the problem of how to design sample-efficient RL algorithms capable of learning multiple behaviors that can be combined to solve any multi-task and multi-objective problems.
 </i>
 <hr>
 I completed my B.Sc. in Computer Science <i>cum laude</i> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul</a> in 2020.
