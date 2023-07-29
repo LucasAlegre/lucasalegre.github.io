@@ -18,15 +18,15 @@
           <div class="row ml-1 mr-1 p-0">
             {%- if project.github -%}
             <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-              </div>
-              {%- if project.github_stars -%}
               <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                <i class="fas fa-star">{{ project.github_stars }}</i>
-                <span id="{{ project.github_stars }}-stars"></span>
+                <iframe 
+                  src="https://ghbtns.com/github-btn.html?user={{project.user}}&repo={{project.project}}&type=star&count=true&size=large" frameborder="0"
+                  scrolling="0"
+                  width="170"
+                  height="30"
+                  title="GitHub">
+                </iframe>
               </span>
-              {%- endif %}
             </div>
             {%- endif %}
           </div>

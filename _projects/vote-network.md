@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Vote Network
+project: vote-network
+user: LucasAlegre
 description: Network Analysis and Interactive Visualization of the Brazilian Chamber of Deputies.
 img: assets/img/vote-network.png
 importance: 1
