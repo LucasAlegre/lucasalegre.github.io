@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <hr>
-I am a Ph.D. student in the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a> under the supervision of Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a>.
+I am a Ph.D. student in the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a> under the supervision of Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a> and Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>.
 Part of my Ph.D. was done in the <a href="https://ai.vub.ac.be/">AI Lab</a> at the <a href="https://www.vub.be/">Vrije Universiteit Brussel (VUB)</a> under the supervision of Prof. <a href="https://ai.vub.ac.be/team/ann-nowe/">Ann Nowé</a>.
 
 I am also part of the <a href="https://farama.org/team">Farama Foundation</a>, a nonprofit organization that maintains the largest open-source RL libraries in the world.
