@@ -31,7 +31,7 @@ In Winter of 2020, I worked as an intern researcher at the <a href="https://www.
 
 <hr>
 <i>
-My research interests include reinforcement learning (RL), machine learning, artificial intelligence, and their applications to real-world problems.
+My main research interests are in reinforcement learning (RL) and its use to empower artificial intelligence agents to solve real-world problems.
 </i>
 
 <i><mark style="background: rgba(0, 118, 223, 0.1)">In my Ph.D., I am tackling the problem of <strong>how to design principled sample-efficient RL algorithms capable of learning multiple behaviors that can be combined to solve multi-task and multi-objective problems.</strong></mark></i>
