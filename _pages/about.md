@@ -27,7 +27,7 @@ I am also part of the <a href="https://farama.org/team">Farama Foundation</a>, a
 I completed my B.Sc. in Computer Science <i>cum laude</i> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul</a> in 2020.
 My undergraduate thesis, advised by Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>, tackled the problem of reinforcement learning in continuous non-stationary environments.
 
-In Winter of 2020, I worked as an intern researcher at the <a href="https://www.tu.berlin/en/">Technische Universität Berlin</a>, under supervision of Prof. <a href="https://www.tu.berlin/vsp/ueber-uns/fachgebietsleitung">Kai Nagel</a>.
+<!-- In Winter of 2020, I worked as an intern researcher at the <a href="https://www.tu.berlin/en/">Technische Universität Berlin</a>, under supervision of Prof. <a href="https://www.tu.berlin/vsp/ueber-uns/fachgebietsleitung">Kai Nagel</a>. -->
 
 <hr>
 <i>
