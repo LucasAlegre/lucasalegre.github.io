@@ -2,7 +2,9 @@
 layout: about
 title: About
 permalink: /
-subtitle:  <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a> and <a href="https://farama.org/team">Farama Foundation</a> <br>lnalegre@inf.ufrgs.br
+subtitle:  <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a>
+<br>
+lnalegre@inf.ufrgs.br
 
 profile:
   align: right
@@ -19,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <hr>
-I am an Adjunct Assistant Professor at the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a>. I hold a Ph.D. in Computer Science at this same university under the supervision of Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a> and Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>.
+I am an Adjunct Assistant Professor at the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a>. I hold a Ph.D. in Computer Science from this same university, where I was advised by Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a> and Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>.
 Part of my Ph.D. was done in the <a href="https://ai.vub.ac.be/">AI Lab</a> at the <a href="https://www.vub.be/">Vrije Universiteit Brussel (VUB)</a> under the supervision of Prof. <a href="https://ai.vub.ac.be/team/ann-nowe/">Ann Nowé</a>.
 
 I am also part of the <a href="https://farama.org/team">Farama Foundation</a>, a nonprofit organization that maintains the largest open-source RL libraries in the world.
@@ -34,7 +36,7 @@ My undergraduate thesis, advised by Prof. <a href="https://people.cs.umass.edu/~
 My main research interests are in reinforcement learning (RL) and its use to empower artificial intelligence agents to solve real-world problems.
 </i>
 
-<i><mark style="background: rgba(0, 118, 223, 0.1)">In my Ph.D., I am tackled the problem of <strong>how to design principled sample-efficient RL algorithms capable of learning multiple behaviors that can be combined to solve multi-task and multi-objective problems.</strong></mark></i>
+<i><mark style="background: rgba(0, 118, 223, 0.1)">In my Ph.D., I tackled the problem of <strong>how to design principled sample-efficient RL algorithms capable of learning multiple behaviors that can be combined to solve multi-task and multi-objective problems.</strong></mark></i>
 <hr>
 
 
