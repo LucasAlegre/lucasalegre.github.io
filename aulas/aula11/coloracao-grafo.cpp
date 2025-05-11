@@ -1,91 +1,72 @@
 #include <iostream>
-#include <list>
-using namespace std;
- 
-// Grafo não direcionado
-class Graph
-{
-    int V;    // Numero de vértices
-    list<int> *adj;    // Lista de adjacências
-public:
-    Graph(int V)   { this->V = V; adj = new list<int>[V]; }
-    ~Graph()       { delete [] adj; }
- 
-    // Adiciona aresta entre vértices v e w
-    void addEdge(int v, int w);
- 
-    // Printa coloração greedy
-    void greedyColoring();
-};
- 
-void Graph::addEdge(int v, int w)
-{
-    adj[v].push_back(w);
-    adj[w].push_back(v);
-}
- 
-// Colore os vértices (começando do 0) e printa o resultado
-void Graph::greedyColoring()
-{
-    int result[V];
- 
-    // Vertice 0 recebe cor 0
-    result[0]  = 0;
- 
-    // Inicializa os V-1 vertices
-    for (int u = 1; u < V; u++)
-        result[u] = -1;  // -1 representa que o vertice nao foi colorido
- 
-    // Array temporario que guarda cores disponiveis
-    // available[cr] true significa que algum vertice adjacente possui cor cr
-    bool available[V];
-    for (int cr = 0; cr < V; cr++)
-        available[cr] = false;
- 
-    // Colore V-1 vertices restantes
-    for (int u = 1; u < V; u++)
-    {
-        list<int>::iterator i;
-        for (i = adj[u].begin(); i != adj[u].end(); ++i)
-        
-        // COMPLETE AQUI !
- 
-        result[u] = cr; // Vertice u recebe cor cr
- 
-        // Reseta os valores para falso na próxima iteração
-        for (i = adj[u].begin(); i != adj[u].end(); ++i)
-            if (result[*i] != -1)
-                available[result[*i]] = false;
-    }
- 
-    // printa a coloração
-    for (int u = 0; u < V; u++)
-        cout << "Vertex " << u << " --->  Color "
-             << result[u] << endl;
-}
- 
+#include <vector>
+#include <algorithm>
 
-int main()
-{
-    Graph g1(5);
-    g1.addEdge(0, 1);
-    g1.addEdge(0, 2);
-    g1.addEdge(1, 2);
-    g1.addEdge(1, 3);
-    g1.addEdge(2, 3);
-    g1.addEdge(3, 4);
+using namespace std;
+
+class Grafo {
+private:
+    int V;  // Número de vértices
+    vector<vector<int>> adj;  // Lista de adjacência
+
+public:
+    // Construtor
+    Grafo(int V) {
+        this->V = V;
+        adj.resize(V);
+    }
+
+    // Adiciona uma aresta não-direcionada
+    void adicionarAresta(int u, int v) {
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+
+    // Algoritmo de coloração gulosa
+    void colorirGuloso() {
+        vector<int> resultado(V, -1); // -1 indica que ainda não foi colorido
+        resultado[0] = 0; // Primeiro vértice recebe a primeira cor
+
+        vector<bool> disponivel(V, true); // Cores disponíveis
+
+        // Colorir os demais vértices
+        for (int u = 1; u < V; ++u) {
+            
+            // COMPLETAR AQUI
+
+            // Resetar disponibilidade para o próximo vértice
+            for (int vizinho : adj[u]) {
+                if (resultado[vizinho] != -1)
+                    disponivel[resultado[vizinho]] = true;
+            }
+        }
+
+        // Exibir as cores atribuídas
+        for (int u = 0; u < V; ++u)
+            cout << "Vértice " << u << " ---> Cor " << resultado[u] << endl;
+    }
+};
+
+int main() {
+
+    Grafo g1(5);
+    g1.adicionarAresta(0, 1);
+    g1.adicionarAresta(0, 2);
+    g1.adicionarAresta(1, 2);
+    g1.adicionarAresta(1, 3);
+    g1.adicionarAresta(2, 3);
+    g1.adicionarAresta(3, 4);
     cout << "Colorindo Grafo 1 \n";
-    g1.greedyColoring();
+    g1.colorirGuloso();
  
-    Graph g2(5);
-    g2.addEdge(0, 1);
-    g2.addEdge(0, 2);
-    g2.addEdge(1, 2);
-    g2.addEdge(1, 4);
-    g2.addEdge(2, 4);
-    g2.addEdge(4, 3);
+    Grafo g2(5);
+    g2.adicionarAresta(0, 1);
+    g2.adicionarAresta(0, 2);
+    g2.adicionarAresta(1, 2);
+    g2.adicionarAresta(1, 4);
+    g2.adicionarAresta(2, 4);
+    g2.adicionarAresta(4, 3);
     cout << "\nColorindo Grafo 2 \n";
-    g2.greedyColoring();
- 
+    g2.colorirGuloso();
     return 0;
 }
