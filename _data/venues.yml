@@ -1,6 +1,12 @@
 "NeurIPS":
   url: https://neurips.cc
 
+"SIGGRAPH":
+  url: https://s2025.siggraph.org
+
+"PhD Thesis":
+  url: https://www.lume.ufrgs.br/handle/10183/290816
+
 "AAMAS":
   url: https://dl.acm.org/conference/aamas
 
