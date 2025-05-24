@@ -2,6 +2,18 @@
   - firstname: ["Bruno C.", "Bruno"]
     url: https://people.cs.umass.edu/~bsilva/
 
+"Barreto":
+  - firstname: ["André"]
+    url: https://sites.google.com/view/andrebarreto/about
+
+"Serifi":
+  - firstname: ["Agon"]
+    url: https://aserifi.github.io
+
+"Bächer":
+  - firstname: ["Moritz"]
+    url: https://www.baecher.info
+
 "Bazzan":
   - firstname: ["Ana", "Ana L. C."]
     url: https://www.inf.ufrgs.br/~bazzan

@@ -1,5 +1,49 @@
 ---
 ---
+@article{Alegre+2025,
+	title = {Constructing an Optimal Behavior Basis for the Option Keyboard},
+  author = {Alegre, Lucas N. and Bazzan, Ana L. C. and Barreto, André and Silva, Bruno C. da},
+  journal={arXiv preprint arXiv:2505.00787},
+	publisher = {arXiv},
+	year = {2025},
+  abstract = {Multi-task reinforcement learning aims to quickly identify solutions for new tasks with minimal or no additional interaction with the environment. Generalized Policy Improvement (GPI) addresses this by combining a set of base policies to produce a new one that is at least as good -- though not necessarily optimal -- as any individual base policy. Optimality can be ensured, particularly in the linear-reward case, via techniques that compute a Convex Coverage Set (CCS). However, these are computationally expensive and do not scale to complex domains. The Option Keyboard (OK) improves upon GPI by producing policies that are at least as good -- and often better. It achieves this through a learned meta-policy that dynamically combines base policies. However, its performance critically depends on the choice of base policies. This raises a key question: is there an optimal set of base policies -- an optimal behavior basis -- that enables zero-shot identification of optimal solutions for any linear tasks? We solve this open problem by introducing a novel method that efficiently constructs such an optimal behavior basis. We show that it significantly reduces the number of base policies needed to ensure optimality in new tasks. We also prove that it is strictly more expressive than a CCS, enabling particular classes of non-linear tasks to be solved optimally. We empirically evaluate our technique in challenging domains and show that it outperforms state-of-the-art approaches, increasingly so as task complexity increases.},
+  abbr = {ArXiv},
+  pdf = {https://arxiv.org/pdf/2505.00787},
+  selected = {true},
+  bibtex_show = {true},
+  preview = {ok.png},
+}
+
+@inproceedings{Alegre+2025siggraph,
+  author = {Lucas N. Alegre and Agon Serifi and Ruben Grandia and David Müller and Espen Knoop and Moritz Bächer},
+  title = {{AMOR}: Adaptive Character Control through Multi-Objective Reinforcement Learning},
+  booktitle = {Proceedings of the 52nd Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH)},
+  abstract = {Reinforcement learning (RL) has significantly advanced the control of physics-based and robotic characters that track kinematic reference motion. However, methods typically rely on a weighted sum of conflicting reward functions, requiring extensive tuning to achieve a desired behavior. Due to the computational cost of RL, this iterative process is a tedious, time-intensive task. Furthermore, for robotics applications, the weights need to be chosen such that the policy performs well in the real world, despite inevitable sim-to-real gaps. To address these challenges, we propose a multi-objective reinforcement learning framework that trains a single policy conditioned on a set of weights, spanning the Pareto front of reward trade-offs. Within this framework, weights can be selected and tuned after training, significantly speeding up iteration time. We demonstrate how this improved workflow can be used to perform highly dynamic motions with a robot character. Moreover, we explore how weight-conditioned policies can be leveraged in hierarchical settings, using a high-level policy to dynamically select weights according to the current task. We show that the multi-objective policy encodes a diverse spectrum of behaviors, facilitating efficient adaptation to novel tasks.},
+  year = {2025},
+  entrytype = {inproceedings},
+  abbr = {SIGGRAPH},
+  location = {Vancouver, Canada},
+  selected = {true},
+  bibtex_show = {true},
+  preview = {siggraph.jpg},
+  pdf = {},
+}
+
+@phdthesis{Alegre2025thesis,
+	title = {Sample-efficient multi-task and multi-objective reinforcement learning by combining multiple behaviors},
+	url = {https://lume.ufrgs.br/handle/10183/290816},
+	abstract = {When solving sequential decision-making problems, humans exhibit different behaviors depending on the problem (or task) they are tasked with solving at a given moment. One of the main challenges in the field of artificial intelligence, and reinforcement learning (RL) in particular, is the development of generalist and flexible agents that are capable of solving multiple tasks—each requiring the agent to learn a potentially new, specialized behavior. Importantly, tackling this challenge requires agents to learn behaviors that may involve optimizing a single objective, or trading off between multiple conflicting objectives. We argue that many important real-world tasks are naturally defined by multiple objectives, which when prioritized differently, may require the agent to adapt its behavior accordingly. In this thesis, we study the problem of how to design flexible RL agents that can, in a sample-efficient manner, adapt their behavior to solve any given tasks—each of which is defined by multiple (possibly conflicting) objectives. The main hypothesis of this thesis is that it is possible to meaningfully combine insights from two apparently disparate sub-fields of machine learning—multi-objective RL and multi-task RL—to design novel and principled techniques to address the problem discussed above. In particular, such insights arise from the fact that both of these fields typically deal with problems where an agent needs to learn multiple behaviors/policies. We introduce new multi-policy methods that empower RL agents to (i) carefully learn multiple behaviors, each specialized in a different task or in tasks in which an agent assigns different priorities (or preferences) to each of its objectives; and (ii) combine previously-learned behaviors to efficiently identify solutions to novel tasks. The methods we investigate and introduce have important theoretical guarantees regarding the optimality of the set of behaviors they identify and their capability of solving new tasks in a zero-shot manner, even in the presence of function approximation errors. We evaluate the proposed methods in various challenging multi-task and multi-objective RL problems and show that our algorithms outperform various current state-of-the-art methods in domains with both discrete and continuous state and action spaces.},
+	school = {Universidade Federal do Rio Grande do Sul},
+	author = {Alegre, Lucas N.},
+	year = {2025},
+  pdf = {https://www.lume.ufrgs.br/handle/10183/290816},
+  abbr = {PhD Thesis},
+  preview = {ccs.png},
+  bibtex_show = {true},
+  selected = {false},
+}
+
+
 @article{Huang+2024,
   title={Open RL Benchmark: Comprehensive Tracked Experiments for Reinforcement Learning},
   author={Shengyi Huang and Quentin Gallouédec and Florian Felten and Antonin Raffin and Rousslan Fernand Julien Dossa and Yanxiao Zhao and Ryan Sullivan and Viktor Makoviychuk and Denys Makoviichuk and Mohamad H. Danesh and Cyril Roumégous and Jiayi Weng and Chufan Chen and Md Masudur Rahman and João G. M. Araújo and Guorui Quan and Daniel Tan and Timo Klein and Rujikorn Charakorn and Mark Towers and Yann Berthelot and Kinal Mehta and Dipam Chakraborty and Arjun KG and Valentin Charraut and Chang Ye and Zichen Liu and Lucas N. Alegre and Alexander Nikulin and Xiao Hu and Tianlin Liu and Jongwook Choi and Brent Yi},
