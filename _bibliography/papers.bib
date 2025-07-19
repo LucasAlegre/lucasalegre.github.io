@@ -14,6 +14,7 @@
   preview = {ok.png},
 }
 
+
 @inproceedings{Alegre+2025siggraph,
   author = {Lucas N. Alegre and Agon Serifi and Ruben Grandia and David Müller and Espen Knoop and Moritz Bächer},
   title = {{AMOR}: Adaptive Character Control through Multi-Objective Reinforcement Learning},
@@ -28,6 +29,20 @@
   preview = {amorgif.gif},
   website = {https://la.disneyresearch.com/publication/amor-adaptive-character-control-through-multi-objective-reinforcement-learning/},
   pdf = {https://arxiv.org/pdf/2505.23708},
+}
+
+@article{Bagot+2025,
+  title={Successor Clusters: A Behavior Basis for Unsupervised Zero-Shot Reinforcement Learning},
+  author={Louis Bagot and Lucas N. Alegre and Steven Latre and Kevin Mets and Bruno Castro da Silva},
+  journal={Transactions on Machine Learning Research},
+  issn={2835-8856},
+  year={2025},
+  pdf={https://openreview.net/forum?id=UB22Tt3sfF},
+  abstract={In this work, we introduce Successor Clusters (SCs), a novel method for tackling unsupervised zero-shot reinforcement learning (RL) problems. The goal in this setting is to directly identify policies capable of optimizing any given reward functions without requiring further learning after an initial reward-free training phase. Existing state-of-the-art techniques leverage Successor Features (SFs)—functions capable of characterizing a policy’s expected discounted sum of a set of d reward features. Importantly, however, the performance of existing techniques depends critically on how well the reward features enable arbitrary reward functions of interest to be linearly approximated. We introduce a novel and principled approach for constructing reward features and prove that they allow for any Lipschitz reward functions to be approximated arbitrarily well. Furthermore, we mathematically derive upper bounds on the corresponding approximation errors. Our method constructs features by clustering the state space via a novel distance metric quantifying the minimal expected number of timesteps needed to transition between any state pairs. Building on these theoretical contributions, we introduce Successor Clusters (SCs), a variant of the successor features framework capable of predicting the time spent by a policy in different regions of the state space. We demonstrate that, after a pre-training phase, our method can approximate and maximize any new reward functions in a zero-shot manner. Importantly, we also formally show that as the number and quality of clusters increase, the set of policies induced by Successor Clusters converges to a set containing the optimal policy for any new task. Moreover, we show that our technique naturally produces interpretable features, enabling applications such as visualizing the sequence of state regions an agent is likely to visit while solving a task. Finally, we empirically demonstrate that our method outperforms stateof-the-art SF-based competitors in challenging continuous control benchmarks, achieving superior zero-shot performance and lower reward approximation error.},
+  preview = {sc.png},
+  bibtex_show = {true},
+  abbr = {TMLR},
+  selected = {true}
 }
 
 @phdthesis{Alegre2025thesis,

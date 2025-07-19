@@ -1,6 +1,9 @@
 "NeurIPS":
   url: https://neurips.cc
 
+"TMLR":
+  url: https://jmlr.org/tmlr
+
 "SIGGRAPH":
   url: https://s2025.siggraph.org
 
