@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
 subtitle:  <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a> <br>lnalegre@inf.ufrgs.br
 
