@@ -6,7 +6,7 @@ subtitle:  <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics<
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_quadrado.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>INF - UFRGS</p>
