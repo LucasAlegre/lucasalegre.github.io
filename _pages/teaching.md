@@ -8,6 +8,11 @@ nav_order: 3
 horizontal: false
 ---
 
+### 2026/1
+
+- **Design and Analysis of Algorithms I (Projeto e Análise de Algoritmos I)**
+- **Computational Thinking (Pensamento Computacional)**
+
 ### 2025/2
 
 - **Algorithm Complexity (Complexidade de Algoritmos)**
