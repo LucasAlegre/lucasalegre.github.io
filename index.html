@@ -230,7 +230,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         
         
         <div class="periodical">
-          <em>Autonomous Agents and Multi-Agent Systems (to appear)</em>, 2026
+          <em>Autonomous Agents and Multi-Agent Systems</em>, 2026
         </div>
         <div class="periodical">
           <b style="color:rgb(179, 128, 34);">  </b>
@@ -238,21 +238,30 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1007/s10458-026-09736-w" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1007/s10458-026-09736-w"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1007/s10458-026-09736-w" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          <!-- Hidden bibtex block -->
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Multi-objective reinforcement learning (MORL) algorithms tackle sequential decision problems where agents may have different preferences over (possibly conflicting) reward functions. These algorithms often learn a set of policies, each optimized for a particular agent preference, that are later reused when optimizing policies for different preferences. We introduce a novel algorithm that builds upon Generalized Policy Improvement (GPI) to construct principled, formally-derived prioritization schemes that improve sample efficiency. These correspond to active-learning strategies by which the agent can identify (i) the most promising preferences/objectives to train on at each moment; and (ii) the most relevant previous experiences to learn policies for new agent preferences through a novel Dyna-style MORL method. We prove our algorithm is guaranteed to always converge to an optimal solution in a finite number of steps, or an \\ε\\-optimal solution (for a bounded \\ε\\) if the agent can only identify sub-optimal policies. Our method monotonically improves the quality of its partial solutions while learning. We also introduce a bound that characterizes the maximum utility loss (with respect to the optimal solution) incurred by intermediate policies identified by our method during learning. Finally, we propose a novel epistemic uncertainty-aware extension of GPI that exploits high-confidence lower bounds to mitigate the impact of unreliable action-value estimates in GPI policies, and prove that it provides tighter performance bounds than the current state of the art. We empirically show that our method outperforms state-of-the-art MORL algorithms in challenging multi-objective tasks.</p>
+          </div>
+<!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Alegre+2026</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Generalized policy improvement for efficient and robust multi-objective reinforcement learning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Alegre, Lucas N. and Roijers, Diederik M. and Now{\'e}, Ann and Bazzan, Ana L. C. and {da Silva}, Bruno C.}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Autonomous Agents and Multi-Agent Systems (to appear)}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Autonomous Agents and Multi-Agent Systems}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{40}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/s10458-026-09736-w}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
