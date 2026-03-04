@@ -5,12 +5,18 @@
   title = {Generalized policy improvement for efficient and robust multi-objective reinforcement learning},
   author = {Lucas N. Alegre and Diederik M. Roijers and Ann Now{\'e} and Ana L. C. Bazzan and Bruno C. {da Silva}},
   year = {2026},
-  journal = {Autonomous Agents and Multi-Agent Systems (to appear)},
+  journal = {Autonomous Agents and Multi-Agent Systems},
+  number = {1},
+  volume = {40},
+  doi = {10.1007/s10458-026-09736-w},
   abbr = {JAAMAS},
   selected = {true},
   bibtex_show = {true},
-  preview = {mario.gif}
+  preview = {mario.gif},
+  abstract = {Multi-objective reinforcement learning (MORL) algorithms tackle sequential decision problems where agents may have different preferences over (possibly conflicting) reward functions. These algorithms often learn a set of policies, each optimized for a particular agent preference, that are later reused when optimizing policies for different preferences. We introduce a novel algorithm that builds upon Generalized Policy Improvement (GPI) to construct principled, formally-derived prioritization schemes that improve sample efficiency. These correspond to active-learning strategies by which the agent can identify (i) the most promising preferences/objectives to train on at each moment; and (ii) the most relevant previous experiences to learn policies for new agent preferences through a novel Dyna-style MORL method. We prove our algorithm is guaranteed to always converge to an optimal solution in a finite number of steps, or an \$\$\textbackslash epsilon \$\$-optimal solution (for a bounded \$\$\textbackslash epsilon \$\$) if the agent can only identify sub-optimal policies. Our method monotonically improves the quality of its partial solutions while learning. We also introduce a bound that characterizes the maximum utility loss (with respect to the optimal solution) incurred by intermediate policies identified by our method during learning. Finally, we propose a novel epistemic uncertainty-aware extension of GPI that exploits high-confidence lower bounds to mitigate the impact of unreliable action-value estimates in GPI policies, and prove that it provides tighter performance bounds than the current state of the art. We empirically show that our method outperforms state-of-the-art MORL algorithms in challenging multi-objective tasks.},
+  pdf = {https://doi.org/10.1007/s10458-026-09736-w}
 }
+
 
 @inproceedings{Alegre+2025,
 	title = {Constructing an Optimal Behavior Basis for the Option Keyboard},
