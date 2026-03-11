@@ -8,10 +8,13 @@ nav_order: 3
 horizontal: false
 ---
 
+Webpage for the course: [INF05008 - Pensamento Computacional](https://lucasalegre.github.io/pensamento-computacional).
+
+
 ### 2026/1
 
-- **Design and Analysis of Algorithms I (Projeto e Análise de Algoritmos I)**
-- **Computational Thinking (Pensamento Computacional)**
+- **Design and Analysis of Algorithms I (INF05027 - Projeto e Análise de Algoritmos I)**
+- **Computational Thinking (INF05008 - Pensamento Computacional)**
 
 ### 2025/2
 
