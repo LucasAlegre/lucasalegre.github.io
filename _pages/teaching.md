@@ -8,7 +8,9 @@ nav_order: 3
 horizontal: false
 ---
 
-Webpage for the course: [INF05008 - Pensamento Computacional](https://lucasalegre.github.io/pensamento-computacional).
+Course Webpages:
+ - [INF05008 - Pensamento Computacional](https://lucasalegre.github.io/pensamento-computacional).
+ - [INF05027 - Projeto e Análise de Algoritmos I](https://lucasalegre.github.io/paa1).
 
 <!-- Webpage for the course: [INF05027 - Projeto e Análise de Algoritmos I](https://lucasalegre.github.io/paa1). -->
 
