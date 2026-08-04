@@ -37,7 +37,7 @@ My main research interests are in reinforcement learning (RL) and its use to emp
 <i><mark style="background: rgba(0, 118, 223, 0.1)">In my <a href="https://lume.ufrgs.br/handle/10183/290816">Ph.D. Thesis</a>, I tackled the problem of <strong>how to design principled sample-efficient RL algorithms capable of learning multiple behaviors that can be combined to solve multi-task and multi-objective problems.</strong></mark></i>
 
 <i>
-My Ph.D. thesis was awarded **Best Ph.D. Thesis** by the [Brazilian Computer Society (SBC)](https://csbc.sbc.org.br/2026/ctd/).
+My Ph.D. thesis was awarded **Best Ph.D. Thesis in Computer Science** by the [Brazilian Computer Society (SBC)](https://csbc.sbc.org.br/2026/ctd/).
 </i>
 <hr>
 

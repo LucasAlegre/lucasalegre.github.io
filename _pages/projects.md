@@ -4,7 +4,7 @@ title: Open-Source
 permalink: /projects/
 description: I am the creator/maintainer of a few open-source projects. I also a member of the <a href=https://farama.org/team>Farama Foundation</a>.
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [Reinforcement Learning, Other]
 horizontal: false
 ---
