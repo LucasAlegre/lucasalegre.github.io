@@ -209,6 +209,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - talks  # sources of the talks (separate repo); publish.sh copies the rendered talks here
 keep_files:
   - CNAME
   - .nojekyll
@@ -242,7 +243,9 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt']
+  # '*/index_files/*': Quarto talks (from talks/publish.sh) ship their own
+  # reveal.js/CSS, which must be copied as-is
+  exclude: ['robots.txt', '*/index_files/*']
   uglifier_args:
     harmony: true
 
