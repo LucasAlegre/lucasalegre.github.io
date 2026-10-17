@@ -62,9 +62,10 @@
 .reveal .gpi-demo {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  gap: 0.9em;
   margin-top: 1em;
 }
+.reveal .gpi-new { flex: 1; }
 .reveal .gpi-base,
 .reveal .gpi-new {
   display: flex;
@@ -80,14 +81,19 @@
 .reveal .gpi-panel p { margin: 0; line-height: 1.2; }
 .reveal .gpi-panel img { width: 285px; }
 .reveal .gpi-policy { font-size: 1.15em; }
-.reveal .gpi-result { font-size: 0.95em; }
+.reveal .gpi-result {
+  font-size: 0.95em;
+  width: 285px;        /* same as the gif, so the arrow centers on the images */
+  margin-right: 140px; /* room for the equation overflowing on both sides */
+}
+.reveal .gpi-result > p:first-child { width: max-content; }
 .reveal .gpi-result .katex-display { margin: 0 0 0.1em; }
 .reveal .gpi-arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
-  margin: 0 0.4em 0 1.5em;
+  flex: 1;
   font-size: 0.8em;
 }
 .reveal .gpi-arrow p { margin: 0.1em 0; }
@@ -106,7 +112,14 @@
   font-size: 1.15em;
   margin-bottom: 0.4em;
 }
-.reveal .ccs-columns .callout-box { width: 100%; box-sizing: border-box; margin-top: 0.5em; font-size: 1.05em; }
+.reveal .ccs-columns .callout-box {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  padding-left: calc(0.6em + 7px);
+  padding-right: 0.6em;
+  font-size: 1.05em;
+}
 .reveal .ccs-columns .paper-excerpt { font-size: 0.64em; margin-top: 0.6em; }
 .reveal .ccs-definition {
   position: absolute;
