@@ -19,13 +19,12 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <hr>
-I am a Professor at the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a>. I hold a Ph.D. in Computer Science from this same university, where I was advised by Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a> and Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>.
+I am a Professor at the <a href="https://www.inf.ufrgs.br/site/en/">Institute of Informatics</a> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul (UFRGS)</a>. I hold a Ph.D. in Computer Science from this same university (2025), where I was advised by Prof. <a href="https://www.inf.ufrgs.br/~bazzan/">Ana Bazzan</a> and Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>.
 Part of my Ph.D. was done in the <a href="https://ai.vub.ac.be/">AI Lab</a> at the <a href="https://www.vub.be/">Vrije Universiteit Brussel (VUB)</a> under the supervision of Prof. <a href="https://ai.vub.ac.be/team/ann-nowe/">Ann Nowé</a>.
+I completed my B.Sc. in Computer Science <i>cum laude</i> at the <a href="http://www.ufrgs.br/english/home">UFRGS</a> in 2020.
 
 I am also part of the <a href="https://farama.org/team">Farama Foundation</a>, a nonprofit organization that maintains the largest open-source RL libraries in the world.
 
-I completed my B.Sc. in Computer Science <i>cum laude</i> at the <a href="http://www.ufrgs.br/english/home">Federal University of Rio Grande do Sul</a> in 2020.
-My undergraduate thesis, advised by Prof. <a href="https://people.cs.umass.edu/~bsilva">Bruno C. da Silva</a>, tackled the problem of reinforcement learning in continuous non-stationary environments.
 
 <!-- In Winter of 2020, I worked as an intern researcher at the <a href="https://www.tu.berlin/en/">Technische Universität Berlin</a>, under supervision of Prof. <a href="https://www.tu.berlin/vsp/ueber-uns/fachgebietsleitung">Kai Nagel</a>. -->
 
@@ -37,7 +36,7 @@ My main research interests are in reinforcement learning (RL) and its use to emp
 <i><mark style="background: rgba(0, 118, 223, 0.1)">In my <a href="https://lume.ufrgs.br/handle/10183/290816">Ph.D. Thesis</a>, I tackled the problem of <strong>how to design principled sample-efficient RL algorithms capable of learning multiple behaviors that can be combined to solve multi-task and multi-objective problems.</strong></mark></i>
 
 <i>
-My Ph.D. Thesis was awarded **Best Ph.D. Thesis in Computer Science** by the [Brazilian Computer Society (SBC)](https://csbc.sbc.org.br/2026/ctd/), and received an Honorable Mention in the CAPES Thesis Award.
+My Ph.D. Thesis was awarded **Best Ph.D. Thesis in Computer Science** by the [Brazilian Computer Society (SBC)](https://csbc.sbc.org.br/2026/ctd/), **Best Ph.D. Thesis in Artificial Intelligence** at the [CTDIAC 2026](https://bracis.sbc.org.br/2026/ctdiac/), the **Maria Carolina Monard Award for Best Ph.D. Thesis on Artificial Intelligence** from [USP](https://www.icmc.usp.br/institucional/premios/premio-maria-carolina-monard), and received an **Honorable Mention** in the [CAPES Thesis Award](https://www.gov.br/capes/pt-br/assuntos/premios/premio-capes-de-tese/premio-capes-de-tese-documentos-relacionados).
 </i>
 <hr>
 
