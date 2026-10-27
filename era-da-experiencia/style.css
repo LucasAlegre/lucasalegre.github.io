@@ -1,0 +1,361 @@
+/* Layouts specific to this talk. Shared styles live in ../_theme/talk.scss
+   (Space .columns blocks with padding: their margin-top gets overridden.)
+   Absolute positions are in slide pixels (1280x720), taken from the original
+   PowerPoint deck. */
+
+/* Title slide: two-line title, details under the rule,
+   logos in the bottom corners with the venue between them */
+.reveal .talk-title-content { padding-top: 105px; }
+.reveal .talk-title-content h1.title { font-size: 2.35em; line-height: 1.15; margin-bottom: 0.65em; }
+.reveal .talk-title-content .talk-title-rule { margin-bottom: 34px; }
+.reveal .talk-title-content .talk-authors { font-size: 1.1em; margin-bottom: 12px; }
+.reveal .talk-title-content .talk-title-details { font-size: 0.8em; line-height: 1.4; }
+.reveal .talk-title-content .talk-title-details a { color: #000; }
+.reveal .talk-title-content .talk-title-details p:last-child {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  width: 640px;
+  margin: 0;
+}
+.reveal .talk-title-content .talk-logos {
+  position: absolute;
+  left: 2%;
+  right: 2%;
+  bottom: 30px;
+  width: auto;
+  align-items: flex-end;
+}
+.reveal .talk-title-content .talk-logo img { max-height: 150px; max-width: 245px; }
+
+/* Closing slide: copy of the title slide with a smaller gray title,
+   "Muito Obrigado!" under it and a QR code in the top-right corner */
+.reveal .closing .talk-title-content h1.title {
+  color: #7f7f7f;
+  font-size: 1.6em;
+  margin-top: 25px;
+  margin-bottom: 2.1em;
+}
+.reveal .closing-thanks {
+  position: absolute;
+  top: 262px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #c00000;
+  font-size: 1.6em;
+}
+.reveal .closing-qr {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  width: 250px;
+}
+
+/* Shared pieces */
+.reveal strong { color: inherit; }
+.reveal .slides section.title-sm h2 { font-size: 1.5em; }
+/* Single figures get fixed sizes instead of .r-stretch, which leaves a
+   lazy-loaded image at height 0 when its slide is opened directly */
+.reveal .slides img.fig { display: block; margin: 0 auto !important; }
+.reveal .spaced > ul > li { margin-top: 0.55em; }
+.reveal .spaced > ul > li:first-child { margin-top: 0; }
+.reveal .slides video.stage-video {
+  display: block;
+  height: 555px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.reveal .slides video.stage-video.dqn { height: 560px; }
+.reveal .slides video.full-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 720px;
+  max-width: none;
+  max-height: none;
+}
+
+/* Thin arrows with a head: []{.flow-arrow}, []{.flow-arrow .left} */
+.reveal .flow-arrow {
+  position: relative;
+  display: block;
+  height: 4px;
+  background: currentColor;
+  margin: 0.35em 0;
+}
+.reveal .flow-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  transform: translateY(-50%);
+  border-left: 16px solid currentColor;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.reveal .flow-arrow.left::after {
+  right: auto;
+  left: -2px;
+  border-left: none;
+  border-right: 16px solid currentColor;
+}
+
+/* Alan Turing */
+.reveal .turing { padding-top: 1.2em; }
+.reveal .turing .column:first-child { font-size: 1.25em; color: #181818; }
+.reveal .turing .column:first-child p { margin: 0 0 1em; }
+.reveal .turing img { height: 410px; width: auto; }
+
+/* Turing's paper with "Can machines think?" underlined */
+.reveal .turing-paper {
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: 1216px;
+}
+.reveal .turing-paper p { margin: 0; }
+.reveal .turing-paper img { display: block; width: 100%; }
+.reveal .paper-underline {
+  position: absolute;
+  left: 40.46%;
+  top: 56.19%;
+  width: 22.65%;
+  height: 6px;
+  background: #c00000;
+}
+
+.reveal .turing-quotes { padding-top: 0.6em; }
+.reveal .turing-quotes p { margin: 0 0 1.1em; }
+
+.reveal .minsky { width: 1280px; }
+
+/* Turing Award */
+.reveal .turing-award { padding-top: 0.6em; align-items: flex-start; }
+.reveal .turing-award li { margin-bottom: 0.7em; }
+.reveal .turing-award .column:last-child img { height: 530px; width: auto; }
+.reveal .award-cup {
+  position: absolute;
+  left: 263px;
+  top: 535px;
+  width: 260px;
+}
+
+/* Reinforcement Learning: bullets with a small agent–environment loop */
+.reveal .rl-intro { padding-top: 0.4em; }
+.reveal .rl-intro .incremental { font-size: 0.95em; }
+.reveal .rl-mini {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 0.85em;
+  text-align: center;
+}
+.reveal .rl-mini p { margin: 0; }
+.reveal .rl-mini-actor video,
+.reveal .rl-mini-actor img { height: 148px; width: auto; margin-top: 0.15em; }
+.reveal .rl-mini-arrows { width: 160px; align-self: center; line-height: 1.2; }
+.reveal .rl-mini-arrows .flow-arrow { margin: 0.5em 0; }
+
+/* Reinforcement Learning: agent–environment loop */
+.reveal .rl-loop { position: absolute; inset: 0; }
+.reveal .rl-loop p { margin: 0; }
+.reveal .rl-loop .rl-label {
+  position: absolute;
+  font-size: 1.25em;
+  text-align: center;
+  white-space: nowrap;
+}
+.reveal .agent-label { left: 193px; top: 205px; }
+.reveal .env-label { left: 756px; top: 208px; }
+.reveal .rl-agent {
+  position: absolute;
+  left: 193px;
+  top: 267px;
+  width: 262px;
+  height: 245px;
+  object-fit: cover;
+}
+.reveal .rl-env {
+  position: absolute;
+  left: 756px;
+  top: 270px;
+  width: 335px;
+  height: 242px;
+}
+.reveal .rl-arrow {
+  position: absolute;
+  inset: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+}
+.reveal .state-label { left: 493px; top: 98px; width: 194px; }
+.reveal .reward-label { left: 493px; top: 205px; width: 194px; }
+.reveal .action-label { left: 498px; top: 538px; width: 194px; }
+.reveal .policy-label { left: 0; top: 585px; width: 470px; font-size: 1.4em !important; }
+.reveal .objective-label { left: 735px; top: 560px; width: 513px; font-size: 1.4em !important; }
+
+/* Temporal Difference */
+.reveal .td { padding-top: 0.4em; align-items: flex-start; }
+.reveal .td .incremental { font-size: 0.95em; }
+.reveal .td img { width: 100%; }
+.reveal .td-arrow {
+  position: absolute;
+  inset: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+}
+
+/* "Atenção em RL": the chart is revealed step by step by white covers,
+   positioned in % of the chart (as in the original deck) */
+.reveal .attention {
+  position: relative;
+  width: 986px;
+  margin: 0 auto;
+}
+.reveal .attention p { margin: 0; }
+.reveal .attention img { display: block; width: 100%; }
+.reveal .attention .cover { position: absolute; background: #fff; }
+.reveal .attention .c-title { left: 2.93%; top: 8.01%; width: 36.63%; height: 7.56%; }
+.reveal .attention .c-main { top: 0.65%; right: 0; height: 87.74%; }
+.reveal .attention .c-label { width: 36.63%; height: 7.56%; }
+.reveal .stage-1 .c-main { left: 21.6%; }
+.reveal .stage-1 .c-label { left: 9.81%; top: 55.38%; }
+.reveal .stage-2 .c-main { left: 27.46%; }
+.reveal .stage-2 .c-label { left: 11.47%; top: 40.64%; }
+.reveal .stage-3 .c-main { left: 36.3%; }
+.reveal .stage-4 .c-main { left: 39.56%; }
+.reveal .stage-5 .c-main { left: 51.6%; }
+.reveal .attention .c-top { left: 62.85%; top: 0.55%; right: 0; height: 60.85%; }
+.reveal .attention .c-qmark { left: 61.53%; top: 57.34%; width: 12.24%; height: 7.16%; }
+.reveal .attention .chart-label { position: absolute; white-space: nowrap; }
+.reveal .attention .l-2020 { left: 44.4%; top: 92.2%; font-size: 0.8em; font-weight: 700; color: #595959; }
+.reveal .attention .l-alphaproof { left: 72.3%; top: 67.2%; font-size: 0.89em; color: #737373; }
+.reveal .attention .l-qmark { left: 75.1%; top: 30.2%; font-size: 1.6em; font-weight: 700; color: #737373; }
+
+/* Recommender systems: four screenshots filling the slide */
+.reveal .recsys { position: absolute; inset: 0; }
+.reveal .recsys p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1280px;
+  height: 720px;
+  margin: 0;
+}
+.reveal .recsys img { width: 640px; height: 360px; object-fit: cover; }
+
+/* Reward is Enough */
+.reveal .paper-header { display: block; width: 1060px; margin: 0.4em auto 0 !important; }
+.reveal .paper-quotes { padding-top: 1em; }
+.reveal .paper-quotes li { margin-bottom: 1em; }
+.reveal .scalar-reward { width: 1100px; }
+
+/* Bullets that come in two steps */
+.reveal .recipe { padding-top: 1em; font-size: 1.1em; }
+
+/* The real world is multi-objective */
+.reveal .driving {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6em;
+}
+.reveal .driving-clip { width: 48%; text-align: center; }
+.reveal .driving-clip p { margin: 0 0 0.2em; font-size: 0.8em; }
+.reveal .driving-clip video { width: 100%; }
+
+/* Multi-objective RL */
+.reveal .morl-goal { font-size: 1.2em; line-height: 1.3; }
+.reveal .slides video.half-cheetah { display: block; width: 602px; margin: 0.6em auto 0; }
+
+/* Sample efficiency: hopper behaviors over a Pareto front */
+.reveal .hopper {
+  position: absolute;
+  top: 262px;
+  width: 166px;
+  height: 166px;
+}
+.reveal .efficiency-plot {
+  position: absolute;
+  left: 448px;
+  top: 455px;
+  width: 383px;
+}
+.reveal .pareto-plot {
+  position: absolute;
+  left: 243px;
+  top: 333px;
+  width: 557px;
+}
+.reveal .pareto-arrows {
+  position: absolute;
+  inset: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+}
+.reveal .infeasible,
+.reveal .morl-question {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.15em;
+}
+.reveal .infeasible { top: 470px; width: 780px; }
+.reveal .morl-question { top: 470px; width: 1180px; }
+.reveal .morl-question p { margin: 0.1em 0; }
+
+/* MO Super Mario Bros. */
+.reveal .mario-pairs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3em;
+}
+.reveal .mario-pair { text-align: center; }
+.reveal .mario-pair > p:first-child {
+  display: flex;
+  gap: 32px;
+  margin: 0;
+}
+.reveal .mario-pair img { width: 256px; }
+.reveal .mario-pair > p:last-child { margin: 0.3em 0 0; }
+.reveal .mario-scaling { padding-top: 0.2em; }
+.reveal .mario-scaling .column:first-child { text-align: center; }
+.reveal .mario-scaling .column:first-child ul { text-align: left; }
+.reveal .mario-scaling .column:first-child img { width: 256px; }
+.reveal .mario-scaling .column:last-child img { height: 400px; width: auto; }
+
+/* Disney Research */
+.reveal .corner-logo {
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  height: 115px;
+}
+.reveal .amor { display: block; width: 880px; margin: 0.5em auto 0 !important; }
+
+/* Beyond rewards */
+.reveal .beyond-rewards { padding-top: 0.4em; align-items: flex-start; }
+.reveal .beyond-rewards .column:last-child { text-align: center; }
+.reveal .beyond-rewards .column:last-child p { margin: 0; }
+.reveal .beyond-rewards img { width: 380px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); margin-bottom: 0.6em; }
+.reveal .paper-venue { font-weight: 700; font-size: 0.8em; }
+
+/* How to learn more: images come in with their bullets */
+.reveal .learn-more .book {
+  position: absolute;
+  left: 958px;
+  top: 246px;
+  width: 219px;
+}
+.reveal .learn-more .room {
+  position: absolute;
+  left: 614px;
+  top: 404px;
+  width: 195px;
+}
