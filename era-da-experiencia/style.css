@@ -3,64 +3,49 @@
    Absolute positions are in slide pixels (1280x720), taken from the original
    PowerPoint deck. */
 
-/* Title slide: two-line title, details under the rule,
-   logos in the bottom corners with the venue between them */
-.reveal .talk-title-content { padding-top: 105px; }
-.reveal .talk-title-content h1.title { font-size: 2.35em; line-height: 1.15; margin-bottom: 0.65em; }
-.reveal .talk-title-content .talk-title-rule { margin-bottom: 34px; }
-.reveal .talk-title-content .talk-authors { font-size: 1.1em; margin-bottom: 12px; }
-.reveal .talk-title-content .talk-title-details { font-size: 0.8em; line-height: 1.4; }
-.reveal .talk-title-content .talk-title-details a { color: #000; }
+/* Title slide: two-line title, name and affiliation under the rule,
+   logos in the bottom corners with the e-mail between them
+   (same sizes as ctd-2026; one title line less, so more padding on top) */
+.reveal .talk-title-content { padding-top: 100px; }
+.reveal .talk-title-content h1.title { font-size: 1.8em; margin-bottom: 0.55em; }
+.reveal .talk-title-content .talk-title-rule { margin-bottom: 36px; }
+.reveal .talk-title-content .talk-authors { font-size: 1.2em; margin-bottom: 20px; }
+.reveal .talk-title-content .talk-title-details { font-size: 0.86em; line-height: 1.4; }
 .reveal .talk-title-content .talk-title-details p:last-child {
   position: absolute;
   left: 50%;
   bottom: 50px;
   transform: translateX(-50%);
-  width: 640px;
   margin: 0;
+  font-size: 0.9em;
 }
 .reveal .talk-title-content .talk-logos {
   position: absolute;
   left: 2%;
   right: 2%;
-  bottom: 30px;
+  bottom: 40px;
   width: auto;
   align-items: flex-end;
 }
-.reveal .talk-title-content .talk-logo img { max-height: 150px; max-width: 245px; }
-
-/* Closing slide: copy of the title slide with a smaller gray title,
-   "Muito Obrigado!" under it and a QR code in the top-right corner */
-.reveal .closing .talk-title-content h1.title {
-  color: #7f7f7f;
-  font-size: 1.6em;
-  margin-top: 25px;
-  margin-bottom: 2.1em;
-}
-.reveal .closing-thanks {
-  position: absolute;
-  top: 262px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #c00000;
-  font-size: 1.6em;
-}
-.reveal .closing-qr {
-  position: absolute;
-  top: 8px;
-  right: 14px;
-  width: 250px;
-}
+.reveal .talk-title-content .talk-logo img { max-height: 125px; }
 
 /* Shared pieces */
 .reveal strong { color: inherit; }
-.reveal .slides section.title-sm h2 { font-size: 1.5em; }
+.reveal .slides section.title-sm h2 { font-size: 1.3em; margin-top: 0.55em; }
+.reveal .corner-logo {
+  position: absolute;
+  top: -4px;
+  height: 80px;
+}
+.reveal .corner-logo.right { right: 0; }
+/* Lists with more room between items: ::: {.spaced}
+   `.slide` outranks Quarto's inline `.reveal .slide ul li` margins */
+.reveal .slide .spaced > ul > li { margin: 0.8em 0 0; }
+.reveal .slide .spaced > ul > li:first-child { margin-top: 0; }
+.reveal .slide .spaced ul ul li { margin: 0.3em 0 0; }
 /* Single figures get fixed sizes instead of .r-stretch, which leaves a
    lazy-loaded image at height 0 when its slide is opened directly */
 .reveal .slides img.fig { display: block; margin: 0 auto !important; }
-.reveal .spaced > ul > li { margin-top: 0.55em; }
-.reveal .spaced > ul > li:first-child { margin-top: 0; }
 .reveal .slides video.stage-video {
   display: block;
   height: 555px;
@@ -103,6 +88,18 @@
   border-right: 16px solid currentColor;
 }
 
+/* About me: bullets beside a photo, logos of the places below */
+.reveal .about { padding-top: 0.2em; font-size: 0.92em; }
+.reveal .about .column:last-child { text-align: center; }
+.reveal .about-photo { width: 100%; border-radius: 12px; }
+.reveal .about-logos p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.6em 0 0;
+}
+.reveal .about-logos img { height: 62px; width: auto; }
+
 /* Alan Turing */
 .reveal .turing { padding-top: 1.2em; }
 .reveal .turing .column:first-child { font-size: 1.25em; color: #181818; }
@@ -134,7 +131,7 @@
 
 /* Turing Award */
 .reveal .turing-award { padding-top: 0.6em; align-items: flex-start; }
-.reveal .turing-award li { margin-bottom: 0.7em; }
+.reveal .slide .turing-award li { margin-bottom: 0.7em; }
 .reveal .turing-award .column:last-child img { height: 530px; width: auto; }
 .reveal .award-cup {
   position: absolute;
@@ -199,6 +196,37 @@
 .reveal .policy-label { left: 0; top: 585px; width: 470px; font-size: 1.4em !important; }
 .reveal .objective-label { left: 735px; top: 560px; width: 513px; font-size: 1.4em !important; }
 
+/* AI in operations management: one card per learning paradigm,
+   then operations problems written as states, actions and rewards */
+.reveal .ops-paradigms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin-top: 0.6em;
+}
+.reveal .ops-card {
+  border: 1px solid rgba(0, 112, 192, 0.22);
+  border-radius: 14px;
+  box-shadow: 0 14px 32px -14px rgba(32, 56, 100, 0.45),
+              0 2px 6px rgba(32, 56, 100, 0.08);
+  padding: 0.7em 1em 0.9em;
+  font-size: 0.82em;
+}
+.reveal .ops-card.ops-rl {
+  border: 3px solid #0070c0;
+  background: linear-gradient(135deg, #f7fbff 0%, #e8f0ff 100%);
+}
+.reveal .ops-card > p { margin: 0; text-align: center; }
+.reveal .ops-name { color: #0070c0; font-size: 1.12em; }
+.reveal .ops-question { color: #7f7f7f; font-style: italic; }
+.reveal .ops-card ul { margin: 0.6em 0 0; }
+.reveal .slide .ops-card li { margin: 0.5em 0 0; }
+.reveal .ops-message { margin-top: 1.3em; font-size: 0.92em; }
+.reveal .ops-table { font-size: 0.7em; padding-top: 0.3em; }
+.reveal .ops-table table { width: 100%; }
+.reveal .ops-table th { color: #0070c0; font-weight: 400; }
+.reveal .ops-table td:first-child { font-weight: 500; }
+
 /* Temporal Difference */
 .reveal .td { padding-top: 0.4em; align-items: flex-start; }
 .reveal .td .incremental { font-size: 0.95em; }
@@ -252,7 +280,7 @@
 /* Reward is Enough */
 .reveal .paper-header { display: block; width: 1060px; margin: 0.4em auto 0 !important; }
 .reveal .paper-quotes { padding-top: 1em; }
-.reveal .paper-quotes li { margin-bottom: 1em; }
+.reveal .slide .paper-quotes li { margin-bottom: 1em; }
 .reveal .scalar-reward { width: 1100px; }
 
 /* Bullets that come in two steps */
@@ -331,12 +359,7 @@
 .reveal .mario-scaling .column:last-child img { height: 400px; width: auto; }
 
 /* Disney Research */
-.reveal .corner-logo {
-  position: absolute;
-  top: -14px;
-  right: 10px;
-  height: 115px;
-}
+.reveal .disney-logo { height: 92px; top: -12px; right: 20px; }
 .reveal .amor { display: block; width: 880px; margin: 0.5em auto 0 !important; }
 
 /* Beyond rewards */
@@ -359,3 +382,50 @@
   top: 404px;
   width: 195px;
 }
+
+/* Closing slide (as in ctd-2026), with the QR code in the venue's place */
+.reveal .slides section.closing { text-align: center; }
+.reveal .closing-title {
+  color: #7f7f7f;
+  font-size: 1.45em;
+  line-height: 1.2;
+  margin: 0.6em auto 0.5em;
+  max-width: 82%;
+}
+.reveal .closing-rule {
+  height: 7px;
+  width: 76%;
+  margin: 0 auto 0.8em;
+  background: #0070c0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+.reveal .closing-author { display: block; font-size: 1.05em; }
+.reveal .closing-thanks { display: block; color: #c00000; font-size: 1.7em; margin-top: 1em; }
+.reveal .closing-logo {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 230px;
+}
+.reveal .closing-qr {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  width: 240px;
+}
+.reveal .closing-contact {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  text-align: left;
+  font-size: 0.66em;
+}
+.reveal .closing-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0.25em 0;
+}
+.reveal .closing-contact img { height: 1.4em; width: auto; }
+.reveal .closing-contact a { color: #000; }
