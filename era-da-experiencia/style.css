@@ -9,7 +9,7 @@
 .reveal .talk-title-content { padding-top: 100px; }
 .reveal .talk-title-content h1.title { font-size: 1.8em; margin-bottom: 0.55em; }
 .reveal .talk-title-content .talk-title-rule { margin-bottom: 36px; }
-.reveal .talk-title-content .talk-authors { font-size: 1.2em; margin-bottom: 20px; }
+.reveal .talk-title-content .talk-authors { font-size: 1.2em; margin-bottom: 50px; }
 .reveal .talk-title-content .talk-title-details { font-size: 0.86em; line-height: 1.4; }
 .reveal .talk-title-content .talk-title-details p:last-child {
   position: absolute;
@@ -226,6 +226,47 @@
 .reveal .ops-table table { width: 100%; }
 .reveal .ops-table th { color: #0070c0; font-weight: 400; }
 .reveal .ops-table td:first-child { font-weight: 500; }
+
+/* IMO 2024 (silver) → IMO 2025 (gold), one card per year */
+.reveal .imo-compare {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: stretch;
+  gap: 20px;
+  padding-top: 1em;
+}
+.reveal .imo-card {
+  border: 3px solid #b5b5b5;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fcfcfc 0%, #ededed 100%);
+  box-shadow: 0 14px 32px -14px rgba(32, 56, 100, 0.45),
+              0 2px 6px rgba(32, 56, 100, 0.08);
+  padding: 0.6em 1em 0.8em;
+  font-size: 0.85em;
+}
+.reveal .imo-card.imo-gold {
+  border-color: #d4a017;
+  background: linear-gradient(135deg, #fffdf2 0%, #fcefc4 100%);
+}
+.reveal .imo-card > p { margin: 0; text-align: center; }
+.reveal .imo-year { color: #7f7f7f; font-size: 1.05em; }
+.reveal .imo-points { font-size: 2.6em; font-weight: 500; line-height: 1.1; }
+.reveal .imo-total { font-size: 1.2em; color: #7f7f7f; }
+.reveal .imo-medal {
+  display: inline-block;
+  margin-top: 0.2em;
+  padding: 0.05em 0.9em;
+  border-radius: 999px;
+  background: #9e9e9e;
+  color: #fff;
+}
+.reveal .imo-gold .imo-medal { background: #d4a017; }
+.reveal .imo-card ul { margin: 0.6em 0 0; }
+.reveal .slide .imo-card li { margin: 0.35em 0 0; }
+.reveal .imo-arrow { align-self: center; color: #0070c0; }
+.reveal .imo-arrow p { margin: 0; }
+.reveal .imo-message { margin-top: 1.3em; text-align: center; font-size: 0.9em; }
+.reveal .imo-message p { margin: 0; }
 
 /* Temporal Difference */
 .reveal .td { padding-top: 0.4em; align-items: flex-start; }
